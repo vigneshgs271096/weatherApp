@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>Weather Application</title>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="card">
+		<div>
+			<form id="locationForm" onsubmit="myFunction(event)">
+				<input type="text" id="location" name="place" placeholder=" Enter location ">
+				<button type="submit"><i class="material-icons" style="font-size:36px;">search</i></button>
+			</form>
+		</div>
+		<div class="result">
+			<div id="temperature"></div>
+			<div id="city"></div>
+			<div id="description"></div>
+			<div class="sub-result">
+				<div class="humidity">
+					<img src="humidity.png" width="30px" height="30px">
+					<h3 id="humidity-value"></h3>
+					<span>Humidity</span>
+				</div>
+				<div class="wind-speed">
+					<img src="winds.png" width="30px" height="30px">
+					<h3 id="speed-value"></h3>
+					<span>Wind Speed</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

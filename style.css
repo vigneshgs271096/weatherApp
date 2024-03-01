@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.card {
+	width: 450px;
+	min-height: 600px;
+	border: 3px solid #000;
+	background-image: linear-gradient(to right bottom, rgb(200, 209, 245), rgb(100, 209, 245));
+	border-radius: 5%;
+	color: rgba(247, 0, 0, 0.607);
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+input[type="text"] {
+	width: 70%;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 1.5rem;
+}
+
+button {
+	border-radius: 50%;
+	margin-left: 0.5rem;
+	cursor: pointer;
+}
+
+::placeholder {
+	font-size: 1rem;
+	padding: 0.25rem;
+	font-weight: 500;
+	color: rgba(247, 0, 0, 0.607);
+}
+
+.result {
+	/* turning point */
+	display: none;  
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+#temperature {
+	font-size: 4rem;
+}
+
+#city {
+	font-size: 3rem;
+}
+
+.sub-result {
+	display: none;
+	justify-content: space-evenly;
+	width: 100%;
+	font-size: 1.5rem;
+	margin-top: 4rem;
+}
+
+.humidity {
+	text-align: center;
+}
+
+.wind-speed {
+	text-align: center;
+}
+
+#description {
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 1em;
+	text-transform: capitalize;
+}
+
+/* .resultHide {
+	display: none;
+} */
